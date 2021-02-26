@@ -12,7 +12,7 @@ package org.petschko.updater;
  */
 class Config {
 	// Program Info
-	static final String version = "0.1";
+	static final String version = "1.0";
 	static final String programName = "Java-Updater";
 
 	/**
