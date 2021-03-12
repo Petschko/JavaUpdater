@@ -1,6 +1,5 @@
 package org.petschko.updater;
 
-import org.jetbrains.annotations.Nullable;
 import org.petschko.lib.Const;
 import org.petschko.lib.notification.ErrorWindow;
 import org.petschko.lib.notification.InfoWindow;
@@ -299,7 +298,7 @@ class Updater {
 	 * @param exit - Should the program stop
 	 * @param exception - Exception which was thrown or null for none
 	 */
-	private void showMessage(String message, int type, boolean exit, @Nullable Exception exception) {
+	private void showMessage(String message, int type, boolean exit, Exception exception) {
 		if(App.useGUI) {
 			if(type == Const.STATUS_ERROR || type == Const.STATUS_WARNING || exception != null) {
 				ErrorWindow errorWindow = new ErrorWindow(message, typeToNotificationType(type), false, exception);
